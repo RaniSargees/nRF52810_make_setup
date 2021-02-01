@@ -10,6 +10,6 @@ int main(void) { //cycles an RGB LED through 6 states
 	uint8_t led = 0;
 	while (1) {
 		nrf_delay_ms(200);
-		nrf_gpio_pin_toggle(19 - ((++led % 2) * 2));
+		nrf_gpio_pin_toggle(19 - ((++led % 3) * 2));
 	}
 }
